@@ -21,6 +21,7 @@ Set Up
 
 
 Building, Running Tests, etc...
+---
 
     $ vagrant ssh
     $ sudo su -
