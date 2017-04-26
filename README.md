@@ -20,10 +20,14 @@ Set Up
     $ vagrant up
 
 
-Building, Running Tests, etc...
+Building and Running
 ---
 
     $ vagrant ssh
     $ sudo su -
     $ cd /usr/src/couchdb
-    See https://github.com/apache/couchdb/blob/master/README-DEV.rst
+    $ ./configure
+    $ make release
+    $ /vagrant/allow-all.sh # Allow any host to connect to DB
+    $ ./rel/couchdb/bin/couchdb
+    Visit http://couchdb.dev:5984/_utils
